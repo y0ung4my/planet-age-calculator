@@ -40,9 +40,6 @@ export default class Age {
         break;
     }
     this.yearsLeft = lifeExpectancy - this.earthAge;
-  }
-
-  planetLifeExpectancy() {
     this.yearsLeftMercury = Math.floor(this.yearsLeft / .24);
     this.yearsLeftVenus = Math.floor(this.yearsLeft / .62);
     this.yearsLeftMars = Math.floor(this.yearsLeft / 1.88);
