@@ -58,4 +58,14 @@ describe('Age', () => {
       expect(age.yearsLeftMars).toEqual(28);
       expect(age.yearsLeftJupiter).toEqual(4);
     })
+
+    test('should return years surpassed expectancy as a positive number', () => {
+      const age = new Age (100, "no", "yes", "yes")
+      age.lifeExpectancy();
+      expect(age.yearsLeft).toEqual(16);
+      expect(age.yearsLeftMercury).toEqual(66);
+      expect(age.yearsLeftVenus).toEqual(25);
+      expect(age.yearsLeftMars).toEqual(8);
+      expect(age.yearsLeftJupiter).toEqual(1);
+    })
 })
