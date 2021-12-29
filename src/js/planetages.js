@@ -14,7 +14,7 @@ planetAges() {
 }
 
 lifeExpectancy() {
-  
+  this.yearsLeft = 78 - this.earthAge;
 }
 
 }
