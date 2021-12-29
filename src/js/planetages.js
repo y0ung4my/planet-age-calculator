@@ -31,6 +31,14 @@ export default class Age {
         lifeExpectancy -= 2;
         break;
     }
+    switch (this.vegetables) {
+      case ("yes"):
+        lifeExpectancy += 1;
+        break;
+      case ("no"):
+        lifeExpectancy -= 3;
+        break;
+    }
     this.yearsLeft = lifeExpectancy - this.earthAge;
   }
 
