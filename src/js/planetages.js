@@ -14,8 +14,17 @@ export default class Age {
   }
 
   lifeExpectancy() {
-    this.yearsLeft = 78 - this.earthAge;
-    
+    let lifeExpectancy = 78;
+    switch (this.stress) {
+      case ("yes"):
+        lifeExpectancy -= 2;
+        break;
+      case ("no"):
+        lifeExpectancy += 2;
+        break;
+    }
+
+    this.yearsLeft = lifeExpectancy - this.earthAge;
   }
 
 }
