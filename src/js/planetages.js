@@ -39,11 +39,14 @@ export default class Age {
         lifeExpectancy -= 3;
         break;
     }
-    this.yearsLeft = lifeExpectancy - this.earthAge;
+    if (this.earthAge > lifeExpectancy) {
+      this.livedPastExpectancy = true;
+    }
+    this.yearsLeft = Math.abs(lifeExpectancy - this.earthAge);
     this.yearsLeftMercury = Math.floor(this.yearsLeft / .24);
     this.yearsLeftVenus = Math.floor(this.yearsLeft / .62);
     this.yearsLeftMars = Math.floor(this.yearsLeft / 1.88);
     this.yearsLeftJupiter = Math.floor(this.yearsLeft / 11.86);
-  }
 
+}
 }
