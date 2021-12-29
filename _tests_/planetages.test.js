@@ -25,10 +25,16 @@ describe('Age', () => {
       expect(age.yearsLeft).toEqual(48);
     })
 
-    test('should subtract 2 years plus age Earth years', () => {
+    test('should subtract 2 years plus age in Earth years from years left', () => {
       const age = new Age(30, "yes");
       age.lifeExpectancy();
       expect(age.yearsLeft).toEqual(46);
+    })
+
+    test('should subtract 2 additional years from years left if user doesn\'t exercise', () => {
+      const age = new Age (30, "yes", "no");
+      age.lifeExpectancy();
+      expect(age.yearsLeft).toEqual(44);
     })
 
 })
