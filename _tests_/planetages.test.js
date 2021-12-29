@@ -13,10 +13,10 @@ describe('Age', () => {
   test('should convert age in Earth years to age on Mercury, Venus, Mars, and Jupiter', () => {
     const age = new Age(30);
     age.planetAges();
-    expect(age.mercuryAge).toEqual(7);
-    expect(age.venusAge).toEqual(18);
-    expect(age.marsAge).toEqual(56);
-    expect(age.jupiterAge).toEqual(355);
+    expect(age.mercuryAge).toEqual(125);
+    expect(age.venusAge).toEqual(48);
+    expect(age.marsAge).toEqual(15);
+    expect(age.jupiterAge).toEqual(2);
   })
 
     test('should subtract age in Earth years to number of years left based on average life expectancy', () => {
