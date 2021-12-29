@@ -37,4 +37,9 @@ describe('Age', () => {
       expect(age.yearsLeft).toEqual(44);
     })
 
+    test('should subtract 2 additional years from years left if user doesn\'t eat vegetables', () => {
+      const age = new Age (30, "yes", "no", "no");
+      age.lifeExpectancy();
+      expect(age.yearsLeft).toEqual(41)
+    })
 })
