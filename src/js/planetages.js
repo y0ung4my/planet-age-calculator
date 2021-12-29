@@ -13,4 +13,8 @@ planetAges() {
   this.jupiterAge = Math.floor(this.earthAge * 11.86);
 }
 
+lifeExpectancy() {
+  
+}
+
 }

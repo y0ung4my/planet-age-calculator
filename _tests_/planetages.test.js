@@ -19,4 +19,10 @@ describe('Age', () => {
     expect(age.jupiterAge).toEqual(355);
   })
 
+    test('should subtract age in Earth years to number of years left based on average life expectancy', () => {
+      const age = new Age(30);
+      age.lifeExpectancy();
+      expect(age.yearsLeft).toEqual(48);
+    })
+
 })
