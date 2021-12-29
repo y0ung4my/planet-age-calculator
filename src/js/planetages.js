@@ -1,6 +1,9 @@
 export default class Age {
-  constructor(earthAge) {
+  constructor(earthAge, stress, exercise, vegetables) {
   this.earthAge = earthAge;
+  this.stress = stress;
+  this.exercise = exercise;
+  this.vegetables = vegetables;
 }
 
 planetAges() {
