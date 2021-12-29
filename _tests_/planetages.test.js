@@ -67,5 +67,6 @@ describe('Age', () => {
       expect(age.yearsLeftVenus).toEqual(25);
       expect(age.yearsLeftMars).toEqual(8);
       expect(age.yearsLeftJupiter).toEqual(1);
+      expect(age.livedPastExpectancy).toEqual(true);
     })
 })
