@@ -57,6 +57,7 @@ describe('Age', () => {
       expect(age.yearsLeftVenus).toEqual(87);
       expect(age.yearsLeftMars).toEqual(28);
       expect(age.yearsLeftJupiter).toEqual(4);
+      expect(age.livedPastExpectancy).toEqual(false);
     })
 
     test('should return years surpassed expectancy as a positive number', () => {

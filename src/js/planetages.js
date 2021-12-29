@@ -41,6 +41,8 @@ export default class Age {
     }
     if (this.earthAge > lifeExpectancy) {
       this.livedPastExpectancy = true;
+    } else {
+      this.livedPastExpectancy = false;
     }
     this.yearsLeft = Math.abs(lifeExpectancy - this.earthAge);
     this.yearsLeftMercury = Math.floor(this.yearsLeft / .24);
