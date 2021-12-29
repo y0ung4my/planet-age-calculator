@@ -31,15 +31,21 @@ describe('Age', () => {
       expect(age.yearsLeft).toEqual(46);
     })
 
-    test('should subtract 2 additional years from years left if user doesn\'t exercise', () => {
+    test('should subtract 2 additional years from years left on Earth if user doesn\'t exercise', () => {
       const age = new Age (30, "yes", "no");
       age.lifeExpectancy();
       expect(age.yearsLeft).toEqual(44);
     })
 
-    test('should subtract 2 additional years from years left if user doesn\'t eat vegetables', () => {
+    test('should subtract 2 additional years from years left on Earth if user doesn\'t eat vegetables', () => {
       const age = new Age (30, "yes", "no", "no");
       age.lifeExpectancy();
       expect(age.yearsLeft).toEqual(41)
+    })
+
+    test('should add 6 years to years left on Earth if user isn\t stressed, exercises, and eats vegetables', () => {
+      const age = new Age (30, "no", "yes", "yes")
+      age.lifeExpectancy();
+      expect(age.yearsLeft).toEqual(54);
     })
 })
