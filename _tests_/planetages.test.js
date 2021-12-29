@@ -48,4 +48,15 @@ describe('Age', () => {
       age.lifeExpectancy();
       expect(age.yearsLeft).toEqual(54);
     })
+
+    test('should calculate number of years remaining on Mercury, Venus, Mars, and Jupiter', () => {
+      const age = new Age (30, "no", "yes", "yes")
+      age.lifeExpectancy();
+      age.planetLifeExpectancy();
+      expect(age.yearsLeft).toEqual(54);
+      expect(age.yearsLeftMercury).toEqual(225);
+      expect(age.yearsLeftVenus).toEqual(87);
+      expect(age.yearsLeftMars).toEqual(28);
+      expect(age.yearsLeftJupiter).toEqual(4);
+    })
 })

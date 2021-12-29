@@ -42,4 +42,8 @@ export default class Age {
     this.yearsLeft = lifeExpectancy - this.earthAge;
   }
 
+  planetLifeExpectancy() {
+
+  }
+
 }
