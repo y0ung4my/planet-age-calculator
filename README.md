@@ -12,7 +12,7 @@
 * _Bootstrap_
 * _Node Package Manager_
 * _Jest_
-* _Lint_
+* _ESLint_
 
 ## Description
 
@@ -22,11 +22,10 @@ _In this project's current state, only the business logic and tests exists, with
 
 _Use as a template for further development_
 1) open terminal
-2) enter the following into terminal: `# git clone https://github.com/y0ung4my/planet-age-calculator.git`
-3) to view the webpage as you make changes, you can open the index.html file in a web browser and refresh the page once the changes are saved.
-
-To view in GitHub Pages (requires internet connection)
-https://y0ung4my.github.io/planet-age-calculator/
+2) enter the following into the terminal: `# git clone https://github.com/y0ung4my/planet-age-calculator.git`
+3) to run in a development environment, make sure Node is installed on your computer here: `https://nodejs.org/en/download/`
+4) in the terminal, enter `npm install`
+5) to add user interface, type `npm run start` and update index.html and index.js as you wish to view updates in your browser as you make edits
 
 ## Known Bugs
 
