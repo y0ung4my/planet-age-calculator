@@ -18,6 +18,11 @@
 
 _In this project's current state, only the business logic and tests exists, with functionality to use a constructor to store age and lifestyle information and uses methods to calculate age and years remaining on Mercury, Venus, Earth, Mars, and Jupiter_
 
+## Features
+_Age.planetAges() can be called to calculate user's age on each of the 5 planets closest to our sun
+_Age.lifeExpectancy() can be called to calculate user's years left on each planet
+_Age.livedPastExpectancy set to true or false when Age.lifeExpectancy() is called. This is used to determine if the calculated number represents years left or years lived past expectancy
+
 ## Setup/Installation Requirements
 
 _Use as a template for further development_
